@@ -3,21 +3,27 @@ import { DM_Serif_Display, DM_Sans, DM_Mono } from 'next/font/google'
 import './globals.css'
 import { Toaster } from 'react-hot-toast'
 
-const dmSerif = DM_Serif_Display({
+cconst dmSerif = DM_Serif_Display({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-display',
+  display: 'swap',
+  preload: false,
 })
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
   variable: '--font-body',
+  display: 'swap',
+  preload: false,
 })
 
 const dmMono = DM_Mono({
   subsets: ['latin'],
   weight: ['300', '400', '500'],
   variable: '--font-mono',
+  display: 'swap',
+  preload: false,
 })
 
 export const metadata: Metadata = {
